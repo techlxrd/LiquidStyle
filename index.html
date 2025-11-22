@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LiquidWeb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/techlxrd/LiquidWeb/liquidweb.css">
+  <script src="https://cdn.jsdelivr.net/gh/techlxrd/LiquidWeb/liquidweb.js"></script>
+  <style>
+    body {
+      background: #16191c;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #eee;
+    }
+    .showcase {
+      display: grid;
+      border-radius:23px;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin-top: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.25em;
+    }
+    small {
+      display: block;
+      text-align: center;
+      color: #aaa;
+    }
+    .credits {
+      margin: 2em auto 0 auto;
+      text-align: center;
+      font-size: 0.95em;
+      color: #999;
+    }
+    code {
+      background: #22272b;
+      border-radius: 4px;
+      padding: 2px 6px;
+      color: #59c1fa;
+    }
+  </style>
+</head>
+<body>
+  <h1>LiquidWeb</h1>
+  <small>Apple Liquid Glass for the web!</small>
+
+  <h2>Usage</h2>
+  <p>
+    Add these to your <code>&lt;head&gt;</code>:
+    <br>
+    <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/techlxrd/LiquidWeb/liquidweb.css"&gt;</code>
+    <br>
+    <code>&lt;script src="https://cdn.jsdelivr.net/gh/techlxrd/LiquidWeb/liquidweb.js"&gt;&lt;/script&gt;</code>
+  </p>
+
+  <h2>Example</h2>
+  <code>
+    &lt;div class="liquid-glass"&gt;Your content here&lt;/div&gt;
+  </code>
+
+  <div class="showcase">
+    <div class="liquid-glass" style="padding: 1rem;">
+      <h3>Card Demo</h3>
+      <p>This card uses <code>liquid-glass</code> for a glassy look!</p>
+    </div>
+    <button class="liquid-glass" style="padding: 0.5rem 1rem; border:none; cursor:pointer;">
+      Glass Button
+    </button>
+    <div class="liquid-glass" style="padding: 1rem;">
+      <h4>Another Example</h4>
+      <input class="liquid-glass" placeholder="Glass Input" style="width:90%;padding:0.5rem;">
+    </div>
+  </div>
+
+  <div class="credits">
+    <p>Created by <a href="https://github.com/techlxrd" target="_blank">techlxrd</a> - <a href="https://github.com/techlxrd/LiquidWeb" target="_blank">View Repo</a></p>
+    <p>MIT License | CDN by <a href="https://www.jsdelivr.com/" target="_blank">jsDelivr</a></p>
+  </div>
+</body>
+</html>
