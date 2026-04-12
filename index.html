@@ -1,99 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>LiquidStyle</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@9.0.0/framework7-bundle.min.css">
-  <link rel="stylesheet" href="liquidstyle.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5.0.5/css/framework7-icons.css" integrity="sha256-RSzKDnaL5c8/Ksi7QeDBiOtJSr5k3LbqDGqs4NKDl7M=" crossorigin="anonymous">
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@9.0.0/framework7-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5.0.5/css/framework7-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/techlxrd/LiquidStyle/liquidstyle.css">
+
   <style>
-    .page-content {
-      background-image: url('assets/background.png');
-      background-size: cover;
-      background-position: center;
-      font-size:auto;
-      color:#fff;
+    :root {
+      --primary-color: #5F7FFF;
+      --text-main: #ffffff;
+      --text-muted: rgba(255, 255, 255, 0.7);
     }
-   
-   .block-strong{height:200px;justify-content:center!important;}
-   .block p{font-size:15px;}
-   .button{margin:20px;}
+
+    body, .page-content {
+      background-image: url('https://512pixels.net/wp-content/uploads/2025/06/26-Tahoe-Light-6K-thumb.jpeg');
+      background-size: cover;
+      color: var(--text-main);
+      overflow-x: hidden;
+    }
+#bmc-wbtn{
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: url(#liquid-filter) blur(1px); -webkit-backdrop-filter: url(#liquid-filter) blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow:
+    0px 0px 0px 2px rgba(255, 255, 255, 0.05) inset,
+    0px 0px 100px 10px rgba(255, 255, 255, 0.05) inset,
+    0 0.5px 0px rgba(255, 255, 255, 0.525) inset !important;
+  color: #fff;
+}
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      padding-top: 40px;
+      padding-bottom: 80px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+   #bmc-wbtn{background-color: rgba(20,25,60,0.5);}
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff, #a5b4fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2 !important;
+      padding-bottom: 4px;
+    }
+
+
+    .glass-btn {
+      border: 1px solid rgba(255,255,255,0.3) !important;
+      color: white !important;
+      transition: all 0.3s ease;
+    }
+
+    .glass-btn:hover {
+      background: rgba(255, 255, 255, 0.25) !important;
+      transform: translateY(-2px);
+    }
+
+    .icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.15);
+      margin-bottom: 16px;
+    }
+
+    .card.liquid-glass {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      border-radius: 28px !important;
+    }
     
+    .card-content-padding {
+      padding: 28px !important;
+      flex-grow: 1;
+    }
+
+    .grid-gap {
+      gap: 16px;
+    }
+
+    .col-100 {
+      margin-bottom: 16px;
+    }
+    
+    .code-block {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      padding: 16px;
+      font-family: monospace;
+      font-size: 14px;
+      color: #a5b4fc;
+      overflow-x: auto;
+      border: 1px solid rgba(255,255,255,0.1);
+      text-align: left;
+      margin: 16px 0;
+    }
   </style>
 </head>
+
 <body>
   <div id="app">
-   
     <div class="view view-main">
-     
-      <div data-name="home" class="page">
+      <div class="page" data-name="home">
         
-        
-        </div>
 
-       
+
         <div class="page-content">
           
-          <center><h1>LiquidStyle</h1><a href="https://github.com/techlxrd/LiquidStyle" class="button button-raised button-round button-fill button-large liquid-glass external">Usage guide and code<i class="f7-icons">logo_github</i></a>
-          <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Known issues 😔</h2>
-              <p style="text-align:left;">•It works only on Chromium based browsers<br>
-          </div> 
-          <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Brought to you by <a href="https://techlxrd.github.io">TechLxrd</a> ❤</h2>
-              <p>Scroll to see the magic happen</p>
-            
-          </div>
-           <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Liquid Glass for the web 💧</h2>
-              <p>Almost the same smooth and amazing liquid glass effect you see on iOS 26, now on the web.</p>
-            
-          </div>
-           <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Very easy to use 😉</h2>
-              <p>Add one class and you're done.<br> No stress.</p>
-            
-          </div>
-          
-           <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Lightweight 🤗</h2>
-              <p>It will not slow your site down because it's very small and light.</p>
-            
-          </div>
-           <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Scroll reactive 🤤</h2>
-              <p>The effect shifts as you scroll. Clean and smooth.</p>
-            
-          </div>
-           <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Plug and play 🙂</h2>
-              <p>Drop the CSS and JS links on your website and you're good to go.</p>
-           
-          </div>
-           <div class="block block-strong inset liquid-glass liquid-glass liquid-glass">          
-           
-              <h2>Open source</h2>
-              <p>You can do anything you want with it,it's fully open source. If you like the project star it on GitHub ✨</p>          
-          </div>
-           <p>LiquidStyle 2025</p>
+          <div class="bg-blobs"></div>
 
-<script src="liquidstyle.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/framework7@9.0.0/framework7-bundle.min.js"></script>
-        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="techlxrd07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+          <div class="content-wrapper">
+            
+            <div class="block margin-top-half text-align-center">
+              <div class="card liquid-glass" style="border-radius: 36px;">
+                <div class="card-content card-content-padding" style="padding: 48px 32px !important;">
+                  <div style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 12px;">
+                    Liquid Glass UI Library
+                  </div>
+                  <h1 class="text-gradient" style="font-size: clamp(40px, 8vw, 64px); font-weight: 800; margin: 0 0 16px; letter-spacing: -1.5px;">
+                    LiquidStyle
+                  </h1>
+                  <p style="font-size: 18px; color: var(--text-muted); margin: 0 auto 32px; max-width: 500px; line-height: 1.6;">
+                    A web library for creating smooth, reactive liquid glass UI elements with a modern iOS-inspired look.
+                  </p>
+                  
+
+                  
+                  <a href="https://github.com/techlxrd/LiquidStyle" class="button button-fill button-round button-large external glass-btn" style="max-width: 280px; margin: 0 auto;">
+                    View on GitHub
+                    <i class="f7-icons" style="margin-left: 8px; font-size: 20px;">logo_github</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-title block-title-medium" style="margin-top: 48px; font-weight: 700; color: white;">Quick Start</div>
+            <div class="block">
+              <div class="card liquid-glass">
+                <div class="card-content card-content-padding">
+                  <p style="margin-top: 0; color: var(--text-muted);">Add the following lines to the HTML <code>&lt;head&gt;</code> and before the closing <code>&lt;/body&gt;</code> tag:</p>
+                  <div class="code-block">
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/techlxrd/LiquidStyle/liquidstyle.css"&gt;<br>
+&lt;script src="https://cdn.jsdelivr.net/gh/techlxrd/LiquidStyle/liquidstyle.js"&gt;&lt;/script&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-title block-title-medium" style="color: white;">Usage</div>
+            <div class="block">
+              <div class="card liquid-glass">
+                <div class="card-content card-content-padding">
+                  <p style="margin-top: 0; color: var(--text-muted);">Apply the <code>liquid-glass</code> class to any element to enable the effect:</p>
+                  <div class="code-block">
+&lt;div class="liquid-glass"&gt;<br>
+&nbsp;&nbsp;LiquidStyle glass surface<br>
+&lt;/div&gt;
+                  </div>
+                  <p style="margin-bottom: 0; opacity: 0.7; font-style: italic;">Works on buttons, cards, sections, and everything. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-title block-title-medium" style="margin-top: 48px; font-weight: 700; color: white;">What it gives you:</div>
+            <div class="block">
+              <div class="row grid-gap">
+                <div class="col-100 medium-50">
+                  <div class="card liquid-glass">
+                    <div class="card-content card-content-padding">
+                      <div class="icon-box"><i class="f7-icons" style="color: white;">drop_fill</i></div>
+                      <h3 style="margin: 0 0 8px; font-size: 20px;">Liquid Glass</h3>
+                      <p style="margin: 0; color: var(--text-muted); line-height: 1.5;">LiquidStyle uses SVG displacement filters to create a polished liquid glass effect.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-100 medium-50">
+                  <div class="card liquid-glass">
+                    <div class="card-content card-content-padding">
+                      <div class="icon-box"><i class="f7-icons" style="color: white;">bolt_fill</i></div>
+                      <h3 style="margin: 0 0 8px; font-size: 20px;">Lightweight</h3>
+                      <p style="margin: 0; color: var(--text-muted); line-height: 1.5;">The library stays minimal so it fits cleanly into existing projects without extra clutter.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-100 medium-50">
+                  <div class="card liquid-glass">
+                    <div class="card-content card-content-padding">
+                      <div class="icon-box"><i class="f7-icons" style="color: white;">wand_stars</i></div>
+                      <h3 style="margin: 0 0 8px; font-size: 20px;">Easy to Use</h3>
+                      <p style="margin: 0; color: var(--text-muted); line-height: 1.5;">LiquidStyle keeps the setup simple so the effect can be added with just a few lines.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-100 medium-50">
+                  <div class="card liquid-glass">
+                    <div class="card-content card-content-padding">
+                      <div class="icon-box"><i class="f7-icons" style="color: white;">arrow_up_arrow_down</i></div>
+                      <h3 style="margin: 0 0 8px; font-size: 20px;">Reactive Motion</h3>
+                      <p style="margin: 0; color: var(--text-muted); line-height: 1.5;">The glass surface reacts to scrolling and background movement for a dynamic visual effect.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="card liquid-glass">
+                <div class="card-header" style="border-bottom: 1px solid rgba(255,255,255,0.1); font-weight: 600; color: white;">Built for fast integration</div>
+                <div class="card-content card-content-padding">
+                  <p style="margin: 0; opacity: 0.9; font-size: 16px; line-height: 1.6;">
+                    LiquidStyle is designed for quick drop-in use. Add the CDN links, apply the class, and the glass effect is ready without extra setup.
+                  </p>
+                </div>
+                <div class="card-footer" style="border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">Simple, clean, open source.</div>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="card liquid-glass" style="border-left: 4px solid #ffcc00;">
+                <div class="card-content card-content-padding display-flex align-items-flex-start" style="gap: 16px;">
+                  <i class="f7-icons" style="color: #ffcc00; font-size: 28px;">exclamationmark_triangle_fill</i>
+                  <div>
+                    <strong style="display: block; font-size: 16px; margin-bottom: 4px; color: white;">Compatibility Note</strong>
+                    <p style="margin: 0; color: var(--text-muted); font-size: 14px; line-height: 1.5;">
+                     LiquidStyle is compatible with Chromium based browsers only. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block text-align-center" style="margin-top: 60px;">
+              <p style="color: var(--text-muted); font-size: 14px; opacity: 0.5;">Released under MIT License. LiquidStyle &copy; 2026</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/techlxrd/LiquidStyle/liquidstyle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/framework7@9.0.0/framework7-bundle.min.js"></script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="techlxrd07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  
   <script>
     var app = new Framework7({
       el: '#app',
       theme: 'ios',
-    });  
+    });
   </script>
 </body>
 </html>
