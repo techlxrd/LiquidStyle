@@ -1,1 +1,1 @@
-.liquid-glass {  backdrop-filter: url(#liquid-filter) blur(1px); -webkit-backdrop-filter: url(#liquid-filter) blur(1px); background: rgba(255, 255, 255, 0.05) 100%);  transform: translate3d(0, 0, 0); }
+.liquid-glass {  backdrop-filter: url(#liquid-filter) blur(1px)!important; -webkit-backdrop-filter: url(#liquid-filter) blur(1px)!important; background: rgba(255, 255, 255, 0.10) !important;  transform: translate3d(0, 0, 0)!important; }
